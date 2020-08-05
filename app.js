@@ -31,7 +31,7 @@ app.get('/',(req,res)=>{
 });
 
 
-var port = process.env.PORT | 9000;
+var port = process.env.PORT || 9000;
 app.listen(port,()=>{
   console.log(`listening to port `+port);
 });
