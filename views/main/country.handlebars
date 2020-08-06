@@ -1,0 +1,31 @@
+
+<br><br><br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class ="container">
+  <center><h1> {{detail.country}}'s Information</h1>
+  </center>
+
+  <br>
+
+   <center>
+    <h4><strong> {{detail.country}}</strong></h4><br>
+    <h5><span >  {{detail.country}} lies in {{detail.continent}} Continent.<br>
+  <span >    Total Population of {{detail.country}}    : {{detail.population}}<br></h5>
+  <a href ="/abc/{{detail.countryInfo._id}}"><img src = "{{detail.countryInfo.flag}}" /></a><br>
+ <br>
+  <h5>
+
+  <span> Total Covid Cases     : {{detail.cases}}<br>
+  <span >  Total Recovered : {{detail.recovered}}<br>
+  <span >    Total Deaths    : {{detail.deaths}}<br>
+  <span >    Active Cases    : {{detail.active}}<br>
+  <span >    Critical Cases  : {{detail.critical}}<br>
+  <span >    Total Tests Done    : {{detail.tests}}<br>
+  <span >    Today's Cases     : {{detail.todayCases}}<br>
+  <span >    Today's Deaths    : {{detail.todayDeaths}}<br>
+  <span >    Today's Recovered : {{detail.todayRecovered}}
+  </h5>
+  <br>
+</center>
+
+</div>

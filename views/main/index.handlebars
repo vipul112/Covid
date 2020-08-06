@@ -3,13 +3,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class ="container">
   <center><h1> COVID-19 Country Wise Data</h1>
-    <h3> Indians please use <br>"Search with <i style="font-size:26px" class="fa">&#xf130;</i>"<br> and Speak Ur State/District. </h3>
+    <!--<h3> Indians please use <br>"Search with <i style="font-size:26px" class="fa">&#xf130;</i>"<br> and Speak Ur State/District. </h3>-->
+    <h3> Click on Flag to get more Info about the Country. </h3>
   </center>
   {{#each result as |val key|}}
   <br>
+
   <center>
     <h4><strong> {{val.country}}</strong></h4><br>
-  <img src = "{{val.countryInfo.flag}}" /><br>
+  <a href ="/{{val.countryInfo._id}}"><img src = "{{val.countryInfo.flag}}" /></a><br>
   <h5>
   <span Style = "color : orange">Total Cases : {{val.cases}}<br>
   <span Style = "color : green">    Total Recovered : {{val.recovered}}<br>

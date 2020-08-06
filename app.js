@@ -1,4 +1,4 @@
-//const request = require("request");
+const request = require("request");
 const express= require('express');
 const app=express();
 // API endpoint to which the http
@@ -29,9 +29,25 @@ app.get('/',(req,res)=>{
   })
 
 });
+app.get('/:id',(req,res)=>{
+  abc.countries({sort : 'cases'}).then((result)=>{
+
+      for(var i=0;i< result.length;i++)
+      {
+        if(result[i].countryInfo._id == req.params.id)
+        {
+          console.log(result[i]);
+          console.log(result[i].countryInfo._id ,req.params.id);
+          res.render('main/country',{detail :result[i]})
+        }
+      }
+
+  });
+
+});
 
 
-var port = process.env.PORT || 9000;
+var port = process.env.PORT | 9000;
 app.listen(port,()=>{
   console.log(`listening to port `+port);
 });
