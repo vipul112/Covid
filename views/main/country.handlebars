@@ -8,22 +8,22 @@
   <br>
 
    <center>
-    <h4><strong> {{detail.country}}</strong></h4><br>
-    <h5><span >  {{detail.country}} lies in {{detail.continent}} Continent.<br>
-  <span >    Total Population of {{detail.country}}    : {{detail.population}}<br></h5>
+    <h4><strong> <{{detail.country}}</strong></h4><br>
+    <h5><span >  <span Style = "Color : green"><strong>{{detail.country}}</strong></span> lies in <span Style = "Color : blue"><strong>{{detail.continent}}</strong></span> Continent.<br>
+  <span >    Total Population of <span Style = "Color : green"><strong>{{detail.country}}</strong></span>    : {{detail.population}}<br></h5>
   <a href ="/abc/{{detail.countryInfo._id}}"><img src = "{{detail.countryInfo.flag}}" /></a><br>
  <br>
   <h5>
 
-  <span> Total Covid Cases     : {{detail.cases}}<br>
-  <span >  Total Recovered : {{detail.recovered}}<br>
-  <span >    Total Deaths    : {{detail.deaths}}<br>
-  <span >    Active Cases    : {{detail.active}}<br>
-  <span >    Critical Cases  : {{detail.critical}}<br>
-  <span >    Total Tests Done    : {{detail.tests}}<br>
-  <span >    Today's Cases     : {{detail.todayCases}}<br>
-  <span >    Today's Deaths    : {{detail.todayDeaths}}<br>
-  <span >    Today's Recovered : {{detail.todayRecovered}}
+  <span Style = "Color : yellow"> <strong>Total Covid Cases     :</span> {{detail.cases}}<br>
+  <span Style = "Color : green">  Total Recovered :  </span>{{detail.recovered}}<br>
+  <span Style = "Color : red">    Total Deaths    :</span> {{detail.deaths}}<br>
+  <span Style = "Color : blue">    Active Cases    : </span>{{detail.active}}<br>
+  <span Style = "Color : orange">    Critical Cases  : </span>{{detail.critical}}<br>
+  <span Style = "Color : pink">    Total Tests Done    : </span>{{detail.tests}}<br>
+  <span Style = "Color : brown">    Today's Cases     : </span>{{detail.todayCases}}<br>
+  <span Style = "Color : purple">    Today's Deaths    : </span>{{detail.todayDeaths}}<br>
+  <span Style = "Color : magenta">    Today's Recovered : </span>{{detail.todayRecovered}}</strong>
   </h5>
   <br>
 </center>
